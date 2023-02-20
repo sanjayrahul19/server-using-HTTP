@@ -43,14 +43,14 @@ const server = http.createServer((req, res) => {
   //   }
   // }); // to delete a file
 
-  //   fs.readFile("index.html", (err, data) => {
-  //     if (err) {
-  //       console.log(err);
-  //     } else {
-  //       res.write(data);
-  //       res.end();
-  //     }
-  //   }); //to read and display index.html page
+    fs.readFile("index.html", (err, data) => {
+      if (err) {
+        console.log(err);
+      } else {
+        res.write(data);
+        res.end();
+      }
+    }); //to read and display index.html page
 });
 
 server.listen(PORT, () => {
